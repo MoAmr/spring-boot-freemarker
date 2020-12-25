@@ -1,9 +1,9 @@
 package com.example.freemarker.controller;
 
 import com.example.freemarker.model.Student;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,8 @@ import java.util.List;
  * @created 26/12/2020 - 00:42
  * @project freemarker
  */
-@Controller
+
+@RestController
 public class StudentList {
 
     @RequestMapping("/list")

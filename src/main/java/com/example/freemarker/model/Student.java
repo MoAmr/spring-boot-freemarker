@@ -7,31 +7,14 @@ package com.example.freemarker.model;
  */
 
 public class Student {
-
     private Integer Id;
-    private String studenName;
+    private String studentName;
     private double grade;
 
-    public Student(Integer id, String studenName, double grade) {
+    public Student(Integer id, String studentName, double grade) {
         Id = id;
-        this.studenName = studenName;
+        this.studentName = studentName;
         this.grade = grade;
-    }
-
-    public Integer getId() {
-        return Id;
-    }
-
-    public void setId(Integer id) {
-        Id = id;
-    }
-
-    public String getStudenName() {
-        return studenName;
-    }
-
-    public void setStudenName(String studenName) {
-        this.studenName = studenName;
     }
 
     public double getGrade() {
@@ -40,5 +23,22 @@ public class Student {
 
     public void setGrade(double grade) {
         this.grade = grade;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public Integer getId() {
+
+        return Id;
+    }
+
+    public void setId(Integer id) {
+        Id = id;
     }
 }
